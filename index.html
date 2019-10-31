@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather app!!!!!</title>
+    <link rel="stylesheet" type="text/css" href="./style/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./style/style.css" />
+  </head>
+  <body>
+    <!--
+    - input box
+    - submit button
+    - an element with a unique class, id, or data-attribute
+      for each of the weather metrics you want to put on the page.
+   -->
+    <div id="searchBar">
+      Enter zipcode: <br />
+      <input type="text" name="zipcode" id="zipcode" maxlength="5" />
+      <button id="getWeather">Submit</button>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <div id="cityName"></div>
+          <div id="currentTemp"></div>
+          <div id="descrip"></div>
+        </div>
+
+        <div class="column minMax">
+          <div id="minTemp"></div>
+          <div id="maxTemp"></div>
+        </div>
+      </div>
+      <div class="column">
+        <div id="humidity"></div>
+        <div id="windSpeed"></div>
+        <div id="longitude"></div>
+        <div id="latitude"></div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
