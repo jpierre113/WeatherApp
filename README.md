@@ -1,8 +1,3 @@
-| Title | Type | Duration | Author |
-| -- | -- | -- | -- |
-| Open Weather API | Lab | 1:30 | Rachel Moskowitz (adapted from SEI) |
-
-
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Building a Weather App
 
 Here's an exciting challenge: You'll be building a small weather app using your newfound API skills.
