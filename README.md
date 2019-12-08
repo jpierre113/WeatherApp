@@ -1,6 +1,6 @@
 # Weather App
 
-Building a small weather app using an API
+Building a small weather app using an API. User will get the local weather based by zipcode.
 
 ## Set Up
 
