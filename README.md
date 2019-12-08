@@ -27,7 +27,3 @@ Mockup of the Weather App
             - Min temp
             - Max temp
 - The temperature turn blue if below 40 and red if above 90.
-
-## Issues working on
-
-- Search button not proceeding -> For Chrome users, in the URL bar selected the sheild icon to load unsafe scripts
