@@ -2,6 +2,11 @@
 
 Building a small weather app using an API. User will get the local weather based by zipcode.
 
+## Technologies used
+- Javascript
+- HTML
+- CSS
+
 ## Set Up
 
 1. Signed up for a free [OpenWeatherMap](https://home.openweathermap.org/users/sign_up) account.
