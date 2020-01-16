@@ -27,10 +27,10 @@ const getData = function(data) {
   const descrip = data.weather[0].description;
   const minTemp = data.main.temp_min;
   const maxTemp = data.main.temp_max;
-  const longitude = data.coord.lon;
-  const latitude = data.coord.lat;
-  const humidity = data.main.humidity;
-  const windSpeed = data.wind.speed;
+  // const longitude = data.coord.lon;
+  // const latitude = data.coord.lat;
+  // const humidity = data.main.humidity;
+  // const windSpeed = data.wind.speed;
 
   manipulateDom(
     cityName,
@@ -38,10 +38,10 @@ const getData = function(data) {
     descrip,
     minTemp,
     maxTemp,
-    longitude,
-    latitude,
-    humidity,
-    windSpeed
+    // longitude,
+    // latitude,
+    // humidity,
+    // windSpeed
   );
 };
 //data from API will be inserted into variable
@@ -51,10 +51,10 @@ const manipulateDom = function(
   descrip,
   minTemp,
   maxTemp,
-  longitude,
-  latitude,
-  humidity,
-  windSpeed
+  // longitude,
+  // latitude,
+  // humidity,
+  // windSpeed
 ) {
   document.getElementById("cityName").innerText = cityName;
   let tempHTML = document.getElementById("currentTemp");
@@ -62,10 +62,10 @@ const manipulateDom = function(
   document.getElementById("descrip").innerText = descrip;
   document.getElementById("minTemp").innerText = "Min\n" + minTemp + "°";
   document.getElementById("maxTemp").innerText = "Max\n" + maxTemp + "°";
-  document.getElementById("longitude").innerText = "Longitude: " + longitude;
-  document.getElementById("latitude").innerText = "Latitude: " + latitude;
-  document.getElementById("humidity").innerText = "Humidity: " + humidity;
-  document.getElementById("windSpeed").innerText = "Wind Speed: " + windSpeed;
+  // document.getElementById("longitude").innerText = "Longitude: " + longitude;
+  // document.getElementById("latitude").innerText = "Latitude: " + latitude;
+  // document.getElementById("humidity").innerText = "Humidity: " + humidity;
+  // document.getElementById("windSpeed").innerText = "Wind Speed: " + windSpeed;
   let searchBar = document.getElementById("searchBar");
   searchBar.style.position = "absolute";
   searchBar.style.top = "20px";
@@ -74,11 +74,14 @@ const manipulateDom = function(
 
   let container = document.querySelector(".container");
   container.style.width = "50%";
-  container.style.backgroundColor = "lightBlue";
-  container.style.border = "2px solid";
+  container.style.paddingTop = "100px";
+  container.style.margin = "0 auto";
+
 
   let row = document.querySelector(".row");
   row.style.border = "2px solid";
+  row.style.borderRadius = "10px";
+  row.style.backgroundColor = "white";
 
   // temperature color will change
   if (parseFloat(currentTemp) < 40) {
